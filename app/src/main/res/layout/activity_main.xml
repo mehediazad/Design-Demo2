@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:id="@+id/head"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#1435EC"
+          android:paddingTop="20dp"
+          >
+
+         <RelativeLayout
+             android:id="@+id/hearder"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/recordID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="R e c o r d"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/downIconId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/recordID"
+                android:src="@drawable/_down_40" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/search_24" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/shotViewId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/hearder"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:paddingRight="20dp"
+             android:background="@drawable/shot_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="Shot Views"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="more"
+                android:textAlignment="viewEnd"
+                android:textColor="#0B2EF3" />
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/head"
+          android:orientation="vertical"
+          android:background="#F3F3F4">
+
+         <RelativeLayout
+             android:id="@+id/landId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/land_shape"
+             android:paddingLeft="20dp"
+             android:paddingRight="10dp"
+             android:paddingBottom="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+               <ImageView
+                   android:id="@+id/landId_first"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:src="@drawable/landscape_40"
+                   android:textAlignment="center" />
+
+               <TextView
+                   android:id="@+id/landId_first_text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_first"
+                   android:text="Checked"
+                   android:textSize="12sp" />
+
+               <TextView
+                   android:id="@+id/landId_first_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_first_text"
+                   android:layout_centerInParent="true"
+                   android:text="246"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true">
+
+               <ImageView
+                   android:id="@+id/landId_second"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/landscape_40_2" />
+
+               <TextView
+                   android:id="@+id/landId_second_text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_second"
+                   android:text="Impliment"
+                   android:textSize="12sp" />
+
+               <TextView
+                   android:id="@+id/landId_second_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_second_text"
+                   android:layout_centerInParent="true"
+                   android:text="694"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp">
+
+               <ImageView
+                   android:id="@+id/landId_third"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/landscape_40_3" />
+
+               <TextView
+                   android:id="@+id/landId_third_text"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_third"
+                   android:text="Following"
+                   android:textSize="12sp" />
+
+               <TextView
+                   android:id="@+id/landId_third_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/landId_third_text"
+                   android:layout_centerInParent="true"
+                   android:text="496"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+         </RelativeLayout>
+
+
+
+         <LinearLayout
+             android:id="@+id/pinID"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/landId"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginLeft="20dp"
+             android:padding="10dp"
+             android:background="@drawable/shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:paddingTop="20dp"
+                   android:paddingBottom="20dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:background="@drawable/colorizeshape"
+                   android:layout_weight="1">
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/colorize_24" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/face"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="15dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/faceTxtId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Thin face needle"
+                      android:textStyle="bold"
+                      android:layout_marginBottom="5dp"/>
+
+                  <LinearLayout
+                      android:id="@+id/face_down"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:orientation="horizontal">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_baseline_location_on_24" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="7dp"
+                         android:text="Uttor Badda, Dhaka"
+                         android:textSize="10sp" />
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="17dp"
+                      android:text="Bangladesh"
+                      android:textSize="10sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="end"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="$"
+                      android:textColor="#2196F3"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="183"
+                      android:textSize="18sp"
+                      android:textColor="#2196F3"/>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/lightId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/pinID"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/shape"
+             android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/bulbshape"
+                   android:paddingLeft="10dp"
+                   android:paddingTop="20dp"
+                   android:paddingRight="10dp"
+                   android:paddingBottom="20dp">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/lightbulb_24" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/hydro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="15dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/hydroTxtId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:text="Hydro lifting"
+                      android:textStyle="bold" />
+
+                  <LinearLayout
+                      android:id="@+id/hydro_down"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:orientation="horizontal">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_baseline_location_on_24" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="7dp"
+                         android:text="Uttor Badda, Dhaka"
+                         android:textSize="10sp" />
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="17dp"
+                      android:text="Bangladesh"
+                      android:textSize="10sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="end"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="$"
+                      android:textColor="#2196F3" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="207"
+                      android:textColor="#2196F3"
+                      android:textSize="18sp" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ballId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/lightId"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/shape"
+             android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/footballshape"
+                   android:paddingLeft="10dp"
+                   android:paddingTop="20dp"
+                   android:paddingRight="10dp"
+                   android:paddingBottom="20dp">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/football_24" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/eyelid"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="15dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/eyelidTxtId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:text="Eyelid"
+                      android:textStyle="bold" />
+
+                  <LinearLayout
+                      android:id="@+id/eyelid_down"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:orientation="horizontal">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_baseline_location_on_24" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="7dp"
+                         android:text="Uttor Badda, Dhaka"
+                         android:textSize="10sp" />
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="17dp"
+                      android:text="Bangladesh"
+                      android:textSize="10sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="end"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="$"
+                      android:textColor="#2196F3" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="157"
+                      android:textColor="#2196F3"
+                      android:textSize="18sp"/>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tubeId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/ballId"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="20dp"
+             android:background="@drawable/shape"
+             android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="20dp"
+                   android:paddingBottom="20dp"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   android:background="@drawable/fix_high_shape"
+                   android:layout_weight="1">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/fix_high_24" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/hyaluronicId"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="15dp"
+                   android:orientation="vertical">
+
+                  <TextView
+                      android:id="@+id/hyaluronicIdTxtId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="5dp"
+                      android:text="Hyaluronic acid"
+                      android:textStyle="bold" />
+
+                  <LinearLayout
+                      android:id="@+id/hyaluronicId_down"
+                      android:layout_marginBottom="5dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/ic_baseline_location_on_24" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Uttor Badda, Dhaka"
+                         android:layout_marginLeft="7dp"
+                         android:textSize="10sp" />
+
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="17dp"
+                      android:text="Bangladesh"
+                      android:textSize="10sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="end"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="$"
+                      android:textColor="#2196F3"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="149"
+                      android:textColor="#2196F3"
+                      android:textSize="18sp" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+      </LinearLayout>
+
+
+   </RelativeLayout>
+
+</RelativeLayout>
